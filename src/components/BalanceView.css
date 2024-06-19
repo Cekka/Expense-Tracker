@@ -1,0 +1,16 @@
+.balance-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.hide-show-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0;
+}
+
+.eye-icon {
+  color: var(--primary-text-color);
+}

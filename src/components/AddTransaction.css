@@ -1,0 +1,30 @@
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 30px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus {
+  outline: 2px solid #7057ea;
+  outline-offset: 2px;
+  background-color: #7057ea;
+}
+
+.btn:hover {
+  background-color: #7057ea;
+}
+
+input {
+  background-color: var(--foreground-color);
+  color: var(--primary-text-color);
+}
+input::placeholder {
+  color: var(--primary-text-color);
+}

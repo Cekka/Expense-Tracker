@@ -1,0 +1,47 @@
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.toggle-container {
+  display: grid;
+  place-items: center;
+}
+
+.checkbox-label {
+  background-color: var(--toggle-bg);
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label .ball {
+  background-color: var(--toggle-ball-bg);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 10px;
+}
+
+.expense-tracker-title {
+  color: var(--primary-text-color);
+}
